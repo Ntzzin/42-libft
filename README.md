@@ -14,4 +14,4 @@ C library that contains some basic tools (funcions) and your own custom function
 
 > [!WARNING]
 > This repository is organized in the way that I think is the most organized. Keep in
-> mind that subject explicitly demands that all files be submitted to the root of the repository.
+> mind that subject explicitly demands that all files be submitted in the root of the repository.
