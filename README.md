@@ -1,4 +1,4 @@
-# What is libft??
+# What is libft?
 This is the first 42's commom core project that consists in creating your first
 C library that contains some basic tools (funcions) and your own custom functions. 
 
