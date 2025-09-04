@@ -6,7 +6,7 @@
 /*   By: nado-nas <nado-nas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/28 17:47:15 by nado-nas          #+#    #+#             */
-/*   Updated: 2025/09/01 12:36:01 by nado-nas         ###   ########.fr       */
+/*   Updated: 2025/09/01 12:55:39 by nado-nas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,10 @@
 
 # include <stdlib.h>
 # include <unistd.h>
+
 /*───────────────────────────────────────────
 				Libc function
 ─────────────────────────────────────────────*/
-
 // string.h
 void	*ft_memset(void *s, int c, size_t n);
 void	ft_bzero(void *s, size_t n); // strings.h
@@ -51,8 +51,19 @@ int		ft_toupper(int c);
 int		ft_tolower(int c);
 
 /*───────────────────────────────────────────
-			Additional function
+			Additional functions
 ─────────────────────────────────────────────*/
+char    *ft_substr(char const *s, unsigned int start, size_t len);
+char    *ft_strjoin(char const *s1, char const *s2);
+char    *ft_strtrim(char const *s1, char const *set);
+char    **ft_split(char const *s, char c);
+char    *ft_itoa(int n);
+char    *ft_strmapi(char const *s, char (*f)(unsigned int, char));
+
+void    ft_putchar_fd(char c, int fd);
+void    ft_putstr_fd(char *s, int fd);
+void    ft_putendl_fd(char *s, int fd);
+void    ft_putnbr_fd(int n, int fd);
 
 /*───────────────────────────────────────────
 				Personal picks
