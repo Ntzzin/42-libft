@@ -1,20 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isspace.c                                       :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nado-nas <nado-nas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/01 11:12:47 by nado-nas          #+#    #+#             */
-/*   Updated: 2025/09/01 12:14:43 by nado-nas         ###   ########.fr       */
+/*   Created: 2025/09/06 16:22:50 by nado-nas          #+#    #+#             */
+/*   Updated: 2025/09/06 16:28:57 by nado-nas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-int		ft_isspace(int c)
+int	ft_lstsize(t_list *lst)
 {
-	if(c == ' ' || (c >= '\t' && c <= '\r'))
-		return 1;
-	return 0;
+	int	i;
+
+	if (!lst)
+		return (0);
+	i = 1;
+	while (lst->next)
+	{
+		lst = lst->next;
+		i++;
+	}
+	return (i);
 }
