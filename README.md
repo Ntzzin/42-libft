@@ -13,6 +13,10 @@ C library that contains some basic tools (funcions) and your own custom ones.
 ## Used tests
 -  [Francinette](https://github.com/xicodomingues/francinette) (with all testers available)
 
+> [!WARNING]
+> This repository is organized in the way that I think is the most organized. Keep in
+> mind that subject explicitly demands that all files be submitted in the root of the repository.
+
 ## Makefile delivered
 ```makefile
 CC = cc
@@ -55,7 +59,3 @@ re: fclean all
 
 .PHONY: all bonus clean fclean re
 ```
-
-> [!WARNING]
-> This repository is organized in the way that I think is the most organized. Keep in
-> mind that subject explicitly demands that all files be submitted in the root of the repository.
