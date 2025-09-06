@@ -1,6 +1,6 @@
 # What is libft?
 This is the first 42's commom core project that consists in creating your first
-C library that contains some basic tools (funcions) and your own custom ones (even though none of my custom tools in ft_personal have been delivered).
+C library that contains some basic tools (funcions) and your own custom ones (even though none of my custom tools in ft_utils have been delivered).
 
 ## Skills learned
 -  Memory menagement
