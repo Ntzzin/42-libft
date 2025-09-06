@@ -10,6 +10,8 @@ C library that contains some basic tools (funcions) and your own custom ones as 
 -  Makefile
 -  Doxygen documenting (very basic, only when I felt the need for)
 
+![50%](https://progress-bar.xyz/50)
+
 ## Used tests
 -  [Francinette](https://github.com/xicodomingues/francinette) (with all testers available)
 
