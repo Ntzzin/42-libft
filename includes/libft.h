@@ -6,7 +6,7 @@
 /*   By: nado-nas <nado-nas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/28 17:47:15 by nado-nas          #+#    #+#             */
-/*   Updated: 2025/09/06 12:14:18 by nado-nas         ###   ########.fr       */
+/*   Updated: 2025/09/06 12:26:02 by nado-nas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,8 +68,5 @@ void    ft_putnbr_fd(int n, int fd);
 /*───────────────────────────────────────────
 				Personal picks
 ─────────────────────────────────────────────*/
-int		ft_isspace(int c);
-int		ft_islower(int c);
-int		ft_isupper(int c);
 
 #endif
