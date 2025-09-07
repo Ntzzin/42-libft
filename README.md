@@ -15,9 +15,9 @@ C library that contains some basic tools (funcions) and your own custom ones as 
 
 > [!WARNING]
 > This repository is organized in the way that I think is the most organized. Keep in
-> mind that subject explicitly demands that all files be submitted in the root of the repository. It
-> is also important to know that this repository will get updated as more projects (such as printf) be
-> allowed to be added to libft and it will be different from the one delivered the first time.
+> mind that subject explicitly demands that all files be submitted to the root of the repository.
+> It is also important to know that this repository will get updated as more projects (such as printf)
+> are allowed to be added to libft, and it will be different from the one delivered the first time.
 
 ## Makefile delivered
 ```makefile
