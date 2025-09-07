@@ -2,7 +2,7 @@
 This is the first 42's commom core project that consists in creating your first
 C library that contains some basic tools (funcions) and your own custom ones as it is needed.
 
-## Skills used
+## Skills
 -  Memory menagement
 -  String manipulation
 -  Math operations (basic arithmetic)
