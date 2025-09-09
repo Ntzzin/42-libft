@@ -19,8 +19,6 @@ C library that contains some basic tools (funcions) and your own custom ones as 
 > It is also important to know that this repository will get updated as more projects (such as printf)
 > are allowed to be added to libft, and it will be different from the one delivered the first time.
 
-<hr>
-
 ## Makefile delivered
 ```makefile
 CC = cc
