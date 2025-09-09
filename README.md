@@ -25,7 +25,7 @@ C library that contains some basic tools (funcions) and your own custom ones as 
   <img alt="Static Badge" src="https://img.shields.io/badge/Francinette-1?style=for-the-badge&logo=github&labelColor=grey&color=grey">
   </a>
 
-
+<hr>
 > [!WARNING]
 > This repository is organized in the way that I think is the most organized. Keep in
 > mind that subject explicitly demands that all files be submitted to the root of the repository.
