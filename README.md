@@ -1,6 +1,6 @@
 <div align="center">
 <!--<i class="fa-solid fa-book-bookmark fa-bounce" style="color: #ed3491;"></i>-->
-<img src="./.README/book-bookmark-solid.svg width="40">
+<img src="./.README/book-bookmark-solid.svg">
 
 # Libft Project
 </div>
