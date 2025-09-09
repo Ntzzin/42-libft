@@ -1,3 +1,13 @@
+<div align="center">
+
+<i class="fa-solid fa-book-bookmark fa-bounce" style="color: #ed3491;"></i>
+#  Libft project
+
+</div>
+
+
+
+
 # What is libft?
 This is the first 42's commom core project that consists in creating your first
 C library that contains some basic tools (funcions) and your own custom ones as it is needed.
