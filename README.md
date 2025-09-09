@@ -1,5 +1,6 @@
 <div align="center">
 <img src="./.README/book-bookmark-solid.svg" width="60">
+
 ![Static Badge](https://img.shields.io/badge/N%2FA-Grade?style=for-the-badge&label=Grade&color=%23ed3491)
 
 # Libft Project
