@@ -1,6 +1,6 @@
 <div align="center">
 <!--<i class="fa-solid fa-book-bookmark fa-bounce" style="color: #ed3491;"></i>-->
-<img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/book.svg" width="30" style="color: #ed3491;">
+<img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/book-bookmark.svg" width="40" fill="#ed3491">
 
 # Libft Project
 </div>
