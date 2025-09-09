@@ -21,7 +21,6 @@ C library that contains some basic tools (funcions) and your own custom ones as 
 -  Doxygen documenting (very basic, only when I felt the need for)
 
 ## Used tests
--  [Francinette](https://github.com/xicodomingues/francinette) (with all testers available)
   <a href="https://github.com/xicodomingues/francinette">
   <img alt="Static Badge" src="https://img.shields.io/badge/Francinette-1?style=for-the-badge&logo=github&labelColor=grey&color=grey">
   </a>
