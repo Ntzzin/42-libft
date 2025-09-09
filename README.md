@@ -20,17 +20,16 @@ C library that contains some basic tools (funcions) and your own custom ones as 
 -  Makefile
 -  Doxygen documenting (very basic, only when I felt the need for)
 
-## Used tests
-  <a href="https://github.com/xicodomingues/francinette">
-  <img alt="Static Badge" src="https://img.shields.io/badge/Francinette-1?style=for-the-badge&logo=github&labelColor=grey&color=grey">
-  </a>
-
-
 > [!WARNING]
 > This repository is organized in the way that I think is the most organized. Keep in
 > mind that subject explicitly demands that all files be submitted to the root of the repository.
 > It is also important to know that this repository will get updated as more projects (such as printf)
 > are allowed to be added to libft, and it will be different from the one delivered the first time.
+
+## Used tests
+  <a href="https://github.com/xicodomingues/francinette">
+  <img alt="Static Badge" src="https://img.shields.io/badge/Francinette-1?style=for-the-badge&logo=github&labelColor=grey&color=grey">
+  </a>
 
 ## Makefile delivered
 ```makefile
