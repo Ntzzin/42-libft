@@ -1,5 +1,6 @@
 <div align="center">
-<i class="fa-solid fa-book-bookmark fa-bounce" style="color: #ed3491;"></i>
+<!--<i class="fa-solid fa-book-bookmark fa-bounce" style="color: #ed3491;"></i>-->
+<i class="material-icons">face</i>
 
 # Libft Project
 </div>
