@@ -6,7 +6,7 @@
 /*   By: nado-nas <nado-nas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/01 15:50:36 by nado-nas          #+#    #+#             */
-/*   Updated: 2025/09/01 16:18:00 by nado-nas         ###   ########.fr       */
+/*   Updated: 2025/10/25 13:45:13 by nado-nas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	int		start;
 	int		end;
 
+	if (!s1 || !set)
+		return (NULL);
 	start = 0;
 	end = ft_strlen(s1);
 	while (s1[start] && ft_strchr(set, (int)s1[start]))
