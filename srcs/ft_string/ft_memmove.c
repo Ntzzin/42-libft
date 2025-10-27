@@ -6,7 +6,7 @@
 /*   By: nado-nas <nado-nas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/29 18:42:27 by nado-nas          #+#    #+#             */
-/*   Updated: 2025/08/30 15:30:05 by nado-nas         ###   ########.fr       */
+/*   Updated: 2025/10/27 13:23:35 by nado-nas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	unsigned char	*ps;
 	size_t			i;
 
-	if (!dest && !src)
-		return (NULL);
 	pd = (unsigned char *)dest;
 	ps = (unsigned char *)src;
 	i = 0;

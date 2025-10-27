@@ -6,7 +6,7 @@
 /*   By: nado-nas <nado-nas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/01 12:56:55 by nado-nas          #+#    #+#             */
-/*   Updated: 2025/09/01 15:23:08 by nado-nas         ###   ########.fr       */
+/*   Updated: 2025/10/27 11:58:52 by nado-nas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	srclen;
 	size_t	sublen;
 
+	if (!s)
+		return (NULL);
 	sublen = 0;
 	srclen = ft_strlen((char *)s);
 	if (start < srclen)

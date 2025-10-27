@@ -6,7 +6,7 @@
 /*   By: nado-nas <nado-nas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/04 14:55:56 by nado-nas          #+#    #+#             */
-/*   Updated: 2025/09/04 15:09:21 by nado-nas         ###   ########.fr       */
+/*   Updated: 2025/10/27 11:58:28 by nado-nas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char	*res;
 	int		i;
 
+	if (!s || !f)
+		return (NULL);
 	res = malloc(ft_strlen(s) + 1);
 	if (!res)
 		return (NULL);

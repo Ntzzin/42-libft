@@ -6,11 +6,21 @@
 /*   By: nado-nas <nado-nas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/03 10:45:54 by nado-nas          #+#    #+#             */
-/*   Updated: 2025/09/04 11:38:39 by nado-nas         ###   ########.fr       */
+/*   Updated: 2025/10/27 11:41:18 by nado-nas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
+
+static void	ft_freesplit(char **strs)
+{
+	int	i;
+
+	i = 0;
+	while (strs[i])
+		free(strs[i++]);
+	free(strs);
+}
 
 static int	ft_wordlen(char const *s, char c)
 {
@@ -31,7 +41,7 @@ static int	ft_words(char const *s, char c)
 	ct = 0;
 	while (s[i])
 	{
-		while (s[i] && s[i] == c)
+		while (s[i] == c)
 			i++;
 		if (s[i] && s[i] != c)
 		{
@@ -44,25 +54,26 @@ static int	ft_words(char const *s, char c)
 }
 
 /**
- * @brief Allocates (with malloc(3)) and copies the next word
- * from the string 's', stopping at the delimiter 'c'.
- * @param dst A pointer to the variable where the allocated word
- * will be stored.
- * @param s The string to analyze, starting from the current position.
+ * @brief Allocates (with malloc(3)) and copies the word starting at 's',
+ * stopping at the delimiter 'c'. Also updates the index to point just past
+ * the end of the copied word.
+ * @param i A pointer to the current index in the source string.
+ * @param s The string to analyze.
  * @param c The delimiter character.
- * @return The length of the copied word (excluding '\0').
- * If allocation fails it returns the lenght that the word
- * would have and '*dst' will be NULL.
+ * @return The new allocated word or NULL if allocation fails.
  */
-static int	ft_word(char **dst, char const *s, char c)
+static char	*ft_word(int *i, char const *s, char c)
 {
-	int	wlen;
+	char	*word;
+	int		wlen;
 
 	wlen = ft_wordlen(s, c) + 1;
-	*dst = malloc(wlen);
-	if (*dst)
-		ft_strlcpy(*dst, s, wlen);
-	return (wlen - 1);
+	word = malloc(wlen);
+	if (!word)
+		return (NULL);
+	ft_strlcpy(word, s, wlen);
+	*i += wlen - 1;
+	return (word);
 }
 
 /**
@@ -81,6 +92,8 @@ char	**ft_split(char const *s, char c)
 	int		i;
 	int		j;
 
+	if (!s)
+		return (NULL);
 	l = malloc(sizeof(char *) * (ft_words(s, c) + 1));
 	if (!l)
 		return (NULL);
@@ -88,13 +101,14 @@ char	**ft_split(char const *s, char c)
 	j = 0;
 	while (s[i])
 	{
-		while (s[i] && s[i] == c)
+		while (s[i] == c)
 			i++;
-		if (s[i] && s[i] != c)
-		{
-			i += ft_word(&(l[j]), &(s[i]), c);
-			j++;
-		}
+		if (!s[i])
+			break ;
+		l[j] = ft_word(&i, &(s[i]), c);
+		if (!l[j])
+			return (ft_freesplit(l), NULL);
+		j++;
 	}
 	l[j] = NULL;
 	return (l);

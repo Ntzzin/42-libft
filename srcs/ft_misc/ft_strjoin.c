@@ -6,7 +6,7 @@
 /*   By: nado-nas <nado-nas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/01 15:20:05 by nado-nas          #+#    #+#             */
-/*   Updated: 2025/09/01 15:49:20 by nado-nas         ###   ########.fr       */
+/*   Updated: 2025/10/27 11:57:41 by nado-nas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	char	*jn;
 	int		len;
 
+	if (!s1 || !s2)
+		return (NULL);
 	len = ft_strlen(s1) + ft_strlen(s2) + 1;
 	jn = malloc(len);
 	if (!jn)

@@ -6,7 +6,7 @@
 /*   By: nado-nas <nado-nas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/06 17:20:39 by nado-nas          #+#    #+#             */
-/*   Updated: 2025/10/21 10:46:00 by nado-nas         ###   ########.fr       */
+/*   Updated: 2025/10/27 13:59:50 by nado-nas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*l;
 	t_list	*node;
+	void	*content;
 
 	if (!lst || !f || !del)
 		return (NULL);
@@ -36,9 +37,11 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	node = NULL;
 	while (lst)
 	{
-		node = ft_lstnew(f(lst->content));
+		content = f(lst->content);
+		node = ft_lstnew(content);
 		if (!node)
 		{
+			del(content);
 			ft_lstclear(&l, del);
 			return (NULL);
 		}

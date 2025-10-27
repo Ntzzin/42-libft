@@ -6,7 +6,7 @@
 /*   By: nado-nas <nado-nas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/04 15:12:56 by nado-nas          #+#    #+#             */
-/*   Updated: 2025/09/04 15:24:14 by nado-nas         ###   ########.fr       */
+/*   Updated: 2025/10/27 11:46:56 by nado-nas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,9 @@ void	ft_putstr_fd(char *s, int fd)
 {
 	int	i;
 
+	if (!s)
+		return ;
 	i = 0;
 	while (s[i])
-		ft_putchar_fd (s[i++], fd);
+		ft_putchar_fd(s[i++], fd);
 }
