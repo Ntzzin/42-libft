@@ -2,7 +2,7 @@
 <img src="./.README/book-bookmark-solid.svg" width="60">
 
 # Libft Project
-![Static Badge](https://img.shields.io/badge/N%2FA-Grade?style=for-the-badge&label=Grade&color=%23ed3491)
+![Static Badge](https://img.shields.io/badge/125%2F125-Grade?style=for-the-badge&label=Grade&color=%23ed3491)
 </div>
 
 
